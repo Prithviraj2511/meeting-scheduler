@@ -1,7 +1,6 @@
 package com.freightfox.meetingassistant.repository;
 
 import com.freightfox.meetingassistant.entity.Meeting;
-import com.freightfox.meetingassistant.entity.TimeSlot;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -10,7 +9,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Repository
-public interface MeetingRepository extends JpaRepository<Meeting,Long> {
+public interface MeetingRepository extends JpaRepository<Meeting, Long> {
 
     @Query("""
             SELECT m FROM Meeting m

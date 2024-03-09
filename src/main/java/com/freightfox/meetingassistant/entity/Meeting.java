@@ -72,7 +72,7 @@ public class Meeting {
         this.description = description;
     }
 
-    public User getHostId() {
+    public User getHost() {
         return host;
     }
 
@@ -104,7 +104,7 @@ public class Meeting {
         this.users = users;
     }
 
-    public void setUsersFromParticipants(List<Long> participants){
+    public void setUsersFromParticipants(List<Long> participants) {
 
     }
 

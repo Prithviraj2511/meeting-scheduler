@@ -30,5 +30,5 @@ public interface UserRepository extends JpaRepository<User, Long> {
                 OR (:endTime BETWEEN m.startTime AND m.endTime)
             )
             """)
-    List<UserDto> getConflictingUserIdList(@Param("meetingId") Long meetingId, @Param("startTime")LocalDateTime startTime, @Param("endTime")LocalDateTime endTime);
+    List<UserDto> getConflictingUserIdList(@Param("meetingId") Long meetingId, @Param("startTime") LocalDateTime startTime, @Param("endTime") LocalDateTime endTime);
 }
